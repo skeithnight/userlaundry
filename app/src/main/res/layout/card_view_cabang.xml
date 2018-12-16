@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/cd_cabang"
+                                    app:cardElevation="5dp"
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="10dp">
+        <TextView android:id="@+id/tv_nama_toko" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Oxy Laundry Arcamanik" android:textStyle="bold" android:textSize="24sp"/>
+        <TextView android:id="@+id/tv_alamat" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Jl. Arcamanik no. 11" android:layout_below="@+id/tv_nama_toko"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

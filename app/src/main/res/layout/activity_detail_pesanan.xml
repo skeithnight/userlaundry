@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.DetailPesananActivity"
+        android:fillViewport="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_above="@+id/btn_simpan" android:orientation="vertical">
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" android:layout_margin="5dp"
+                                                app:cardElevation="5dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical" android:padding="5dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Tanggal Penjemputan" android:textStyle="bold" android:textSize="18sp"/>
+                    <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <EditText
+                                android:enabled="false"
+                                android:id="@+id/waktu_detail_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" android:layout_margin="5dp"
+                                                app:cardElevation="5dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical" android:padding="5dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Lokasi Penjemputan" android:textStyle="bold" android:textSize="18sp"/>
+                    <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <EditText
+                                android:enabled="false"
+                                android:id="@+id/alamat__detail_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:inputType="text|textMultiLine"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" android:layout_margin="5dp"
+                                                app:cardElevation="5dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical" android:padding="5dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Cabang" android:textStyle="bold" android:textSize="18sp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <EditText
+                                android:enabled="false"
+                                android:id="@+id/cabang_detail_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" android:layout_margin="5dp"
+                                                app:cardElevation="5dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical" android:padding="5dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="Layanan Laundry" android:textStyle="bold" android:textSize="18sp"/>
+                    <ListView
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/listLayanan__detail_pesan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                    </ListView>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                                  android:orientation="vertical" android:padding="5dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="Total Tagihan" android:textStyle="bold" android:textSize="18sp"/>
+
+                        <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <EditText
+                                    android:enabled="false"
+                                    android:id="@+id/tagihan__detail_pesan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" android:layout_margin="5dp"
+                                                app:cardElevation="5dp">
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_detail_pesanan" android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" android:text="Cancel" android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_red_light" android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+</ScrollView>

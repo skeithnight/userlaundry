@@ -30,13 +30,29 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PesanActivity">
+        <activity
+                android:name=".activities.PesanActivity"
+                android:label="Pesan Laundry"
+                android:parentActivityName=".MainActivity">
         </activity>
         <activity
                 android:name=".activities.LoginActivity"
                 android:label="@string/title_activity_login">
         </activity>
-        <activity android:name=".activities.ListDataActivity" android:parentActivityName=".MainActivity">
+        <activity
+                android:name=".activities.ListDataActivity"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".activities.SignUpActivity"
+                android:label="Sign Up"
+                android:parentActivityName=".activities.LoginActivity">
+        </activity>
+        <activity
+                android:label="Detail Pesanan"
+                android:parentActivityName=".MainActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:name=".activities.DetailPesananActivity">
         </activity>
     </application>
 

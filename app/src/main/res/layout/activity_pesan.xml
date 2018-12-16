@@ -11,7 +11,7 @@
 					  android:layout_above="@+id/btn_simpan" android:orientation="vertical">
 			<android.support.v7.widget.CardView android:layout_width="match_parent"
 												android:layout_height="wrap_content" android:layout_margin="5dp"
-												android:elevation="5dp">
+												app:cardElevation="5dp">
 				<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
 							  android:orientation="vertical" android:padding="5dp">
 					<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -23,25 +23,44 @@
 			</android.support.v7.widget.CardView>
 			<android.support.v7.widget.CardView android:layout_width="match_parent"
 												android:layout_height="wrap_content" android:layout_margin="5dp"
-												android:elevation="5dp">
+												app:cardElevation="5dp">
 				<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
 							  android:orientation="vertical" android:padding="5dp">
 					<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
 							  android:text="Lokasi Penjemputan" android:textStyle="bold" android:textSize="18sp"/>
 					<Button android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:text="Pilih Lokasi" android:id="@+id/btn_lokasi"/>
+					<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+						<EditText
+								android:id="@+id/alamat_pesan"
+								android:layout_width="match_parent"
+								android:layout_height="100dp"
+								android:hint="Alamat"
+								android:inputType="text|textMultiLine"/>
+
+					</android.support.design.widget.TextInputLayout>
 				</LinearLayout>
 
 			</android.support.v7.widget.CardView>
 			<android.support.v7.widget.CardView android:layout_width="match_parent"
 												android:layout_height="wrap_content" android:layout_margin="5dp"
-												android:elevation="5dp">
+												app:cardElevation="5dp">
 				<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
 							  android:orientation="vertical" android:padding="5dp">
 					<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
 							  android:text="Layanan Laundry" android:textStyle="bold" android:textSize="18sp"/>
 					<Button android:layout_width="match_parent" android:layout_height="wrap_content"
 							android:text="Pilih Layanan" android:id="@+id/btn_layanan"/>
+					<ListView
+							android:layout_marginTop="5dp"
+							android:id="@+id/listLayanan_pesan"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical" >
+					</ListView>
 				</LinearLayout>
 
 			</android.support.v7.widget.CardView>
